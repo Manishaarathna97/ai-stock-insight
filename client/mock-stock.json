@@ -1,0 +1,12 @@
+{
+  "symbol": "AAPL",
+  "companyName": "Apple Inc.",
+  "price": 191.87,
+  "open": 190.50,
+  "high": 192.00,
+  "low": 189.80,
+  "volume": 62500000,
+  "change": "+1.37",
+  "recommendation": "Buy",
+  "summary": "Apple stock is trending upward with strong trading volume. AI suggests a Buy signal based on recent momentum."
+}

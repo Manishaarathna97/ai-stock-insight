@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Stock Insight</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script/main.js"></script>
+
+  <style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-in-out both;
+  }
+</style>
+
+</head>
+<body class="bg-gray-100 font-sans" style="background-image: url('../bg-photo.jpg'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+  <div class="relative z-10">
+    <header class="bg-white bg-opacity-80 shadow p-4">
+      <h1 class="text-2xl font-bold text-center text-blue-700">📈 AI Stock Insight</h1>
+    </header>
+
+    <main class="p-6 text-center flex flex-col items-center min-h-[70vh] justify-center">
+  <h2 class="text-2xl sm:text-3xl text-white font-semibold mb-6 animate-fade-in">
+    Your AI-powered stock market assistant
+  </h2>
+  <div class="flex flex-col sm:flex-row items-center gap-4">
+    <input
+      type="text"
+      placeholder="Enter Stock Symbol (e.g., AAPL)"
+      class="border p-3 rounded w-64 shadow focus:outline-blue-500 transition-all duration-300"/>
+    <button class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-transform duration-200 transform hover:scale-105">Search</button>
+  </div>
+  <section id="stock-result" class="mt-10 max-w-xl mx-auto"></section>
+
+</main>
+
+  </div>
+</body>
+</html>
